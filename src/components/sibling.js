@@ -1,12 +1,16 @@
-const { individualProduct, setIndividualProduct } = useContext(Context);
+
 import React, {  useContext } from "react";
 import { Context } from "../contexts";
 
-import React from 'react'
 
 export default function Sibling() {
+    const { color, setColor } = useContext(Context);
+    const style = {
+        background: color,
+        height: 500
+    }
     return (
-        <div>
+        <div style={style}>
             
         </div>
     )
